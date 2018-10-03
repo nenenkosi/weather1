@@ -1,0 +1,23 @@
+<ion-header>
+<ion-toolbar>
+    <ion-title>List</ion-title>
+    <ion-buttons start (click)="asdf()">
+      <button ion-button icon-only color="royal">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bck" >
+  <ion-list >
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="{{img}}">
+      </ion-avatar>
+      <h1>{{name}}</h1>
+      <h2>{{temp}}</h2>
+      <p>{{dt | date:"dd/MMMM/yyyy"}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

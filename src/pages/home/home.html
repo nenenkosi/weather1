@@ -1,0 +1,44 @@
+
+   <ion-header >
+      <ion-toolbar color="dark" >
+        <ion-buttons end (click)="getWeather(cityname.value)">
+          <button ion-button icon-only color="royal">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-input text-center placeholder="Enter the city name" #cityname ></ion-input>
+        <!-- <ion-buttons start (click)="more(cityname.value)">
+          <button ion-button icon-only color="royal">
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-buttons> -->
+      </ion-toolbar>
+     </ion-header>
+   
+
+     
+
+   <ion-content class="bck" padding>
+      
+    <div class="center">
+      <h1>{{name}}</h1>
+      <P>Today</P>
+      <br>
+      
+      <!-- <div class="round"></div> -->
+      
+      <img src="{{img}}" alt="" > 
+      
+      <h1>{{condition}}</h1>
+      <br> 
+      <h2>{{temp}}</h2>
+
+      
+    
+      <h3>Humidity <br> {{hum}}</h3> 
+
+      <p>{{dt | date:"dd/MMMM/yyyy"}}</p>
+    </div>
+    
+</ion-content>
+
